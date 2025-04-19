@@ -3,6 +3,16 @@ function sortear() {
     let de = parseInt(document.getElementById('de').value);
     let ate = parseInt(document.getElementById('ate').value)
 
+    if (de >= ate) {
+        alert('Campo "Do número" deve ser inferior ao campo "Até o número". Verifique!');
+        return;
+    };
+
+    if (quantidade > (ate - de + 1)) {
+        alert('Campo "quantidade" não deve ser maior do que o intervalo selecionado. Verifique!');
+        return;
+    };
+
     let sorteados = [];
     let numero;
 
