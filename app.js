@@ -9,7 +9,7 @@ function sortear() {
     };
 
     if (quantidade > (ate - de + 1)) {
-        alert('Campo "quantidade" não deve ser maior do que o intervalo selecionado. Verifique!');
+        alert('Campo "quantidade" não deve ser maior que o intervalo selecionado. Verifique!');
         return;
     };
 
